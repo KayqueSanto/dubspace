@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.left-side {
+  background: url('image.png') no-repeat center center; /* Substitua 'image.png' pelo caminho da sua imagem */
+  background-size: cover;
+  flex: 0 0 35%;
+  height: 100%; /* Garante que ocupe toda a altura */
+}
+
+.right-side {
+  padding: 40px;
+  flex: 0 0 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-side h2 {
+  font-size: 24px;
+  color: #0d0d26;
+}
+
+.right-side p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.right-side span {
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0d0d26;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #0d0d26;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #33f9e1;
+}
+
+.support {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.support a {
+  color: #33f9e1;
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+  }
+
+  .left-side {
+    height: 300px; /* Define a altura da imagem no mobile */
+  }
+
+  .right-side {
+    padding: 20px;
+  }
+
+  .right-side h2, .right-side p, .right-side form, .right-side .support {
+    text-align: center;
+  }
+}
+
+.instagram-link {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.instagram-link a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.instagram-link a img {
+  width: 24px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 24px; /* Ajuste o tamanho da imagem conforme necessário */
+  margin-right: 5px; /* Espaço entre a imagem e o texto */
+}
+
+.instagram-link a span {
+  font-weight: bold; /* Para destacar o texto */
+}
+
+.instagram-link a:hover {
+  color: #33f9e1;
+}
+
+
